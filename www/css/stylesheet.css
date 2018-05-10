@@ -1,5 +1,5 @@
-#home{ background-image: url("..img/1.jpg"); }
-#run{ background-image: url("..img/1.jpg"); }
+#home{ background-image: url("img/1.jpg"); }
+#run{ background-image: url("img/1.jpg"); }
 
 .scroller {
     background-size: cover;
