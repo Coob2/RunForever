@@ -46,10 +46,7 @@
 
     <!-- Core plugins -->
     <plugin name="cordova-plugin-battery-status" />
-    <plugin name="cordova-plugin-camera" />
-    <plugin name="cordova-plugin-media-capture" />
     <plugin name="cordova-plugin-console" />
-    <plugin name="cordova-plugin-contacts" />
     <plugin name="cordova-plugin-device" />
     <plugin name="cordova-plugin-device-motion" />
     <plugin name="cordova-plugin-device-orientation" />
@@ -61,7 +58,6 @@
     <plugin name="cordova-plugin-inappbrowser" />
     <plugin name="cordova-plugin-media" />
     <plugin name="cordova-plugin-network-information" />
-    <plugin name="cordova-plugin-splashscreen" />
     <plugin name="cordova-plugin-vibration" />
 
     <!-- Third party plugins -->
@@ -69,13 +65,6 @@
     <!--
         <plugin name="com.phonegap.plugins.barcodescanner" />
     -->
-
-    <!-- Define app icon for each platform. -->
-    <icon src="img/icon.png" />
-
-    <gap:config-file platform="ios" parent="CFBundleShortVersionString">
-    <string>100</string>
-    </gap:config-file>
 
     <!--
         Define access to external domains.
