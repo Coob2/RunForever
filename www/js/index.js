@@ -4,14 +4,12 @@ $(document).on("pagecreate","#home",function(){
   });
 });
 
+
 function submitText() {
 	var text = $('#textinput').val();
 	alert(text);
-  storeValue("name",$('#textinput').val());
 }
 
 function storeValue(key, value) {
-  var storage = window.localStorage;
-  var value = storage.getItem(key); // Pass a key name to get its value.
-  storage.setItem(key, value) // Pass a key name and its value to add or update that key.
+	//add some code to store the key-value pair in persistant storage
 }
