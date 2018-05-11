@@ -4,7 +4,6 @@ $(document).on("pagecreate","#home",function(){
   });
 });
 
-
 function submitText() {
 	var text = $('#textinput').val();
 	alert(text);
