@@ -3,7 +3,7 @@
     xmlns:gap   = "http://phonegap.com/ns/1.0"
     id          = "com.phonegap.RunForever"
     versionCode = "1"
-    version     = "0.0.6" >
+    version     = "0.0.7" >
 
   <name>RunForever</name>
 
