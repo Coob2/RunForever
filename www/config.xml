@@ -26,6 +26,14 @@
     <plugin name="cordova-plugin-inappbrowser" />
     <plugin name="cordova-plugin-network-information" />
     <plugin name="cordova-plugin-vibration" />
+    <plugin name="cordova-plugin-googlemaps" spec="^2.2.9">
+    <variable name="API_KEY_FOR_ANDROID" value="(api key)" />
+
+    <!-- these are optional settings -->
+    <variable name="PLAY_SERVICES_VERSION" value="11.8.0" />
+    <variable name="ANDROID_SUPPORT_V4_VERSION" value="24.1.0" />
+    <variable name="LOCATION_WHEN_IN_USE_DESCRIPTION" value="Location is in use" />
+    <variable name="LOCATION_ALWAYS_USAGE_DESCRIPTION" value="Continually updating location" />
 
     <!--Apple iOS 10 or newer: Adding a parameter to the ios build to allow suer to give permission to access location-->
     <config-file platform="ios" parent="NSLocationWhenInUseUsageDescription" mode="merge">

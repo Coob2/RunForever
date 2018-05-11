@@ -8,6 +8,7 @@ var name = localStorage.getItem("name");
 var age = localStorage.getItem("age");
 var gender = localStorage.getItem("gender");
 
+alert("Get names");
 $('#name').val(name);
 $('#age').val(age);
 $('#gender').val(gender);
@@ -26,4 +27,5 @@ var gender = $('#gender').val(gender);
   localStorage.setItem('name', name);
   localStorage.setItem('age', age);
   localStorage.setItem('gender', gender);
+  alert("save names");
 }

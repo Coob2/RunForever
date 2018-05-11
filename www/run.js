@@ -1,4 +1,6 @@
 var watchID;
+var lon[];
+var lat[];
 
 var locationOptions = {
 	maximumAge: 10000,
@@ -25,23 +27,21 @@ function getPosition() {
 	watchID = navigator.geolocation.watchPosition(successPosition, failPosition, locationOptions);
 }
 
-var map;
-function initMap() {
-	map = new google.maps.Map(document.getElementById('map'), {
-		center: {lat: -34.397, lng: 150.644},
-		zoom: 8
-	});
-}
-
-function savePosition(){
-
-}
-
 //set location options
 var locationOptions = {
 maximumAge: 3000,
 timeout: 5000,
 enableHighAccuracy: true};
+
+function finishRun(){
+  var map;
+  function initMap() {
+  	map = new google.maps.Map(document.getElementById('map'), {
+  		center: {lat: -34.397, lng: 150.644},
+  		zoom: 8
+  	});
+  }
+}
 
 //called when the position is successfully determined
 function successPosition(position) {
@@ -50,8 +50,6 @@ function successPosition(position) {
 	var latitude = position.coords.latitude;
 	var longitude = position.coords.longitude;
 	var accuracy = position.coords.accuracy;
-
-
 
 }
 
