@@ -3,17 +3,37 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8">
-	<title>Home</title>
+	<title>Start running!!</title>
   <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
   <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
   <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-  <script src="js/index.js"></script>
-  <script src="js/side-scroller.js"></script>
+  <script src="run.js"></script>
   <script src="css/stylesheet.js"></script>
 
 </head>
 
 <body>
+
+  <div data-role="page" id="home">
+   	<div data-role="header">Start running</div>
+    	<div role="main" class="ui-content">
+          <br>
+
+<button id="StartRun">Start run</button>
+
+      </div>
+
+      <div data-role="footer">
+        <div data-role="navbar">
+                    <ul>
+                        <li><a href="index.html" data-icon="home">Home</a></li>
+                        <li><a href="run.html" data-icon="location" class="ui-btn-active">Run</a></li>
+                        <li><a href="stats.html" data-icon="grid">Stats</a></li>
+                        <li><a href="profile.html" data-icon="user">Profile</a></li>
+                    </ul>
+                </div><!-- /navbar -->
+      </div>
+  	</div>
 
 </body>
 </html>

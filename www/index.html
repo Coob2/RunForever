@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<title>Home</title>
   <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <link rel="styleshet" href="css/stylesheet.css"/>
 	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
   <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 </head>
@@ -13,14 +14,23 @@
 <div data-role="page" id="home">
  	<div data-role="header">Welcome To RunForever</div>
   	<div role="main" class="ui-content">
-
-        <a href="#" class="ui-btn ui-corner-all">Run</a>
-        <a href="#" class="ui-btn ui-corner-all">Stats</a>
-        <a href="#" class="ui-btn ui-corner-all">Profile</a>
-
+      <h1>Welcome</h1>
+        <br>
+      <p>
+        Welcome to RunForever, please start a run or view your stats.
+      </p>
     </div>
-    <div data-role="footer">Footer</div>
-	</div>
 
+    <div data-role="footer">
+      <div data-role="navbar">
+                  <ul>
+                      <li><a href="index.html" data-icon="home" class="ui-btn-active">Home</a></li>
+                      <li><a href="run.html" data-icon="location">Run</a></li>
+                      <li><a href="stats.html" data-icon="grid">Stats</a></li>
+                      <li><a href="profile.html" data-icon="user">Profile</a></li>
+                  </ul>
+              </div><!-- /navbar -->
+    </div>
+	</div>
 </body>
 </html>

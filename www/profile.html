@@ -3,8 +3,9 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8">
-	<title>Statistics</title>
+	<title>Profile</title>
   <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <link rel="styleshet" href="css/stylesheet.css"/>
 	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
   <script src="js/index.js"></script>
@@ -13,14 +14,41 @@
 </head>
 
 <body>
-<div data-role="page" id="run" class="scroller" data-dom-cache="true" data-theme="a" data-prev="stats">
-  	<div role="main" class="ui-content">
-      <div id="trivia-running" class="trivia ui-content" data-role="popup" data-position-to="window" data-tolerance="50,30,30,30" data-theme="a">
-        <a href="#" data-rel="return" class="ui-btn ui-btn-right ui-btn-b ui-btn-icon-notext ui-icon-delete ui-corner-all">Close</a>
-        <p>Stats for runs</p>
+
+  <div data-role="page" id="profile">
+
+   	<div data-role="header">Profile</div>
+    	<div role="main" class="ui-content">
+        <h1>View user data</h1>
+          <br>
+
+          <div data-role="fieldcontain">
+          <button id="saveInfo">Save User Data</button>
+              <label for="name">Name:</label>
+              <input type="text" name="name" id="name" value=""  />
+              <label for="age">Age:</label>
+              <input type="number" name="age" id="age" value=""  />
+              <label for="gender">Gender:</label>
+              <input type="text" name="gender" id="gender" value=""  />
+          </div>
+
       </div>
-    </div>
-</div>
+
+
+
+
+      <div data-role="footer">
+        <div data-role="navbar">
+                    <ul>
+                        <li><a href="index.html" data-icon="home" >Home</a></li>
+                        <li><a href="run.html" data-icon="location">Run</a></li>
+                        <li><a href="stats.html" data-icon="grid">Stats</a></li>
+                        <li><a href="profile.html" data-icon="user" class="ui-btn-active">Profile</a></li>
+                    </ul>
+                </div><!-- /navbar -->
+      </div>
+  	</div>
+
 </body>
 
 </html>
